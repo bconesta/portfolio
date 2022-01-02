@@ -5,4 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+.tittle{
+  margin: 100px 0;
+}
+.tittle h1{
+  font-size: 60px;
+  margin-bottom: 0;
+}
+.tittle p{
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.card{
+  background-color: rgb(224, 224, 224);
+  margin-bottom: 20px;
 }
