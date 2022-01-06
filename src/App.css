@@ -1,5 +1,4 @@
 body {
-  margin: 0 200px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +6,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
-
+.body{
+  margin: 0 150px;
+}
+.body-static{
+  margin: 0 80px;
+}
 .tittle{
   margin: 100px 0;
 }
@@ -23,4 +27,51 @@ body {
 .card{
   background-color: rgb(224, 224, 224);
   margin-bottom: 20px;
+  z-index: 1;
+  color: black;
+  text-decoration: none;
+}
+
+.card:hover{
+  animation: card-hover 0.2s;
+  filter: brightness(50%);
+}
+.static:hover{
+  animation: none;
+  filter: none;
+}
+
+@keyframes card-hover{
+  from{
+    filter: brightness(100%);
+  }
+  to{
+    filter: brightness(50%);
+  }
+}
+
+.Navbar .link{
+  text-decoration: none;
+  border-right: 1px black dotted;
+  padding: 5px 15px;
+}
+
+/*MOBILE */
+@media (max-width: 600px) {
+  .body{
+    margin: 0;
+  }
+  .card{
+    
+    display: block !important;
+  }
+  .card img{
+    width: 100% !important;
+  }
+  .card div{
+    width: 100% !important;
+  }
+  .Navbar h3{
+    margin-left: 100px;
+  }
 }

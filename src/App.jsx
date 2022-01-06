@@ -2,12 +2,15 @@ import './App.css';
 import Card from './components/Card';
 import Navbar from './components/Navbar';
 import Tittle from './components/Tittle';
-import Imagen from './img/7E8A3786.jpg';
-
+import Domodin from './img/domodin/all.png';
+import Gentec from './img/planty/all.png';
+import Blog from './img/blog1.PNG';
+import Cloxs from './img/ecloxs.PNG';
 function App() {
   return (
     <>      
-      <Navbar></Navbar>
+      <Navbar class="Navbar"></Navbar>
+      <div className='body'>
       <Tittle
         tittle="Hi, I'm Bruno Conesta!"
         text="Scroll down to my work"
@@ -16,43 +19,47 @@ function App() {
       <Card
         inverted={false}
         class="card"
-        src={Imagen}
+        src={Gentec}
         alt="Podras"
         height="350px"
-        tittle="All of me"
+        tittle="Mi Planty"
         text="2021"
+        href="/planty"
       ></Card>
 
       <Card
         inverted={true}
         class="card"
-        src={Imagen}
+        src={Cloxs}
         alt="Podras"
         height="350px"
-        tittle="All of me"
+        tittle="eCloxs"
         text="2021"
+        href="/ecloxs"
       ></Card>
 
       <Card
         inverted={false}
         class="card"
-        src={Imagen}
+        src={Blog}
         alt="Podras"
         height="350px"
-        tittle="All of me"
+        tittle="Personal blog"
         text="2021"
+        href="/blog"
       ></Card>
 
       <Card
         inverted={true}
         class="card"
-        src={Imagen}
+        src={Domodin}
         alt="Podras"
         height="350px"
-        tittle="All of me"
-        text="2021"
+        tittle="Domodin"
+        text="2020"
+        href="/domodin"
       ></Card>
-
+      </div>
     </>
   );
 }
