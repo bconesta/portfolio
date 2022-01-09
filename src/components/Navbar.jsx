@@ -24,8 +24,8 @@ export default function Navbar(props) {
             <div style={styles.textContainer}>
                 <h3>Bruno Conesta</h3>
             </div>
-            <Link className={"link"} to="/">Work</Link>
-            <a className={"link"} target='_blank' href="https://etrr.gitlab.io/1521-tel/7tel/blog/blog-bruno-conesta/">About</a>
+            <Link className="link" to="/">Work</Link>
+            <a className="link" href="https://etrr.gitlab.io/1521-tel/7tel/blog/blog-bruno-conesta/">About</a>
         </div>
     )
 }

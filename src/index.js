@@ -1,19 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import './index.css';
 //Pages
 import App from './App';
 import Planty from './routes/Planty';
-import Domodin from './routes/Domodin'
+import Domodin from './routes/Domodin';
+import Blog from './routes/Blog';
+import Ecloxs from './routes/Ecloxs'
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/domodin" element={<Domodin />} />
-      <Route path="/planty" element={<Planty />} />
-    </Routes>
-  </BrowserRouter>,
+  <React.StrictMode>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/domodin" element={<Domodin />} />
+        <Route path="/planty" element={<Planty />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/ecloxs" element={<Ecloxs />} />
+      </Routes>
+    </HashRouter>
+  </React.StrictMode>,
   document.getElementById('root')
 );
