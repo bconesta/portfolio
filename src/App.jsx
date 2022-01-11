@@ -1,11 +1,12 @@
-import './App.css';
+//import './App.css';
+import './App.scss'
 import Card from './components/Card';
 import Navbar from './components/Navbar';
 import Tittle from './components/Tittle';
 import Domodin from './img/domodin/all.png';
 import Gentec from './img/planty/all.png';
 import Blog from './img/blog1.PNG';
-import Cloxs from './img/ecloxs.PNG';
+import Cloxs from './img/ecloxs/ecloxs.PNG';
 function App() {
   return (
     <>      

@@ -10,18 +10,18 @@ body {
   margin: 0 150px;
 }
 .body-static{
-  margin: 0 80px;
+  margin: 20px 80px;
 }
 .tittle{
   margin: 100px 0;
-}
-.tittle h1{
-  font-size: 60px;
-  margin-bottom: 0;
-}
-.tittle p{
-  margin-top: 0;
-  margin-bottom: 30px;
+  h1{
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+  p{
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .card{
@@ -30,12 +30,12 @@ body {
   z-index: 1;
   color: black;
   text-decoration: none;
+  &:hover{
+    animation: card-hover 0.2s;
+    filter: brightness(50%);
+  }
 }
 
-.card:hover{
-  animation: card-hover 0.2s;
-  filter: brightness(50%);
-}
 .static:hover{
   animation: none;
   filter: none;
@@ -63,14 +63,13 @@ body {
     margin: 0;
   }
   .card{
-    
     display: block !important;
-  }
-  .card img{
-    width: 100% !important;
-  }
-  .card div{
-    width: 100% !important;
+    img{
+      width: 100% !important;
+    }
+    div{
+      width: 100% !important;
+    }
   }
   .Navbar h3{
     margin-left: 100px;

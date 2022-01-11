@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css';
+import '../App.scss';
 import StaticCard from '../components/StaticCard';
 import Navbar from '../components/Navbar'
 import Home from '../img/domodin/home.PNG'
@@ -21,7 +21,6 @@ export default function Domodin() {
                 Working with Firebase Realtime Database and Firebase Authentication, the user
                 could change its lamp state, turning on the air conditioner or setting those things
                 to operate automatically."
-                href="/planty"
                 ></StaticCard>
 
                 <StaticCard 
@@ -32,7 +31,6 @@ export default function Domodin() {
                 tittle="Log in page"
                 text="Each user was linked with a house system. This way only the account owner would
                 be able to control the devices."
-                href="/planty"
                 ></StaticCard>
 
             </div>
