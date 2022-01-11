@@ -14,7 +14,7 @@ function App() {
       <div className='body'>
       <Tittle
         tittle="Hi, I'm Bruno Conesta!"
-        text="Scroll down to my work"
+        text="Scroll down to see my work"
         class="tittle"
       ></Tittle>
       <Card
