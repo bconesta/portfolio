@@ -62,14 +62,24 @@ body {
   .body{
     margin: 0;
   }
+  .body-static{
+    margin: 0;
+  }
   .card{
     display: block !important;
+    max-height: fit-content !important;
     img{
       width: 100% !important;
     }
     div{
       width: 100% !important;
+      margin: 0 !important;
     }
+  }
+  .static{
+    img{
+      width: 70% !important;
+    }  
   }
   .Navbar h3{
     margin-left: 100px;
